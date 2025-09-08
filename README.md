@@ -7,39 +7,39 @@ Green edges represent positive correlations, while blue negative correlations (S
 Network visualizations were generated using the visNetwork package in R.
 
 Variables:
-Frailty: Frailty Index
-BMI: Body mass index
-Grip: handgrip strenght
-MMSE: Mini-Mental State Examination
-SSS: Social Support Scale
-MHC_SF: Mental Health Continuum Short Form 	
-ESS: Epworth Sleepiness Scale 
-MNA: Mini Nutritional Assessment
-RAVLT_I: Rey Auditory Verbal Learning Test Immediate recall
-RAVLT_D: Rey Auditory Verbal Learning Test Delayed recall
-SPPB: Short Physical Performance Battery 	
-Htime: execution time (s) for the H cancellation test
-Fluency: Phonemic verbal fluency
-HADS_A: Hospital Anxiety and Depression Scale- Anxiety
-HADS_D: Hospital Anxiety and Depression Scale- Depression
-HADS_TOT: Hospital Anxiety and Depression Scale
-DTCSwitch: Dual task Cost of Switching task performed on Dividat Senso
-StroopDTC_Inh_1:Dual task Cost of Stroop Inhibition task performed on Dividat Senso- baseline RT colours
-StroopDTC_Inh_2: Dual task Cost of Stroop Inhibition task performed on Dividat Senso- baseline RT words
-StroopDTC_Flex_1: Dual task Cost of Stroop Flexibility task performed on Dividat Senso- baseline RT colours
-StroopDTC_Flex_2: Dual task Cost of Stroop Flexibility task performed on Dividat Senso- baseline RT words
-TugDTC: Dual task Cost of Timed Up and Go- normal pace
-TugDTC_fast: Dual task Cost of Timed Up and Go- fast pace
-SixMTW: 6 Minutes Walking Test
-Hear: Whisper test	
-Vacuity: Visual Acuity- Snellen chart
-PEF: Peak of expiratory Flow
-NPA: No-physical activity (actigraphic registration)
-LPA: Light physical activity (actigraphic registration)
-MPA: Medium physical activity (actigraphic registration)	
-VPA: Vigorous physical activity (actigraphic registration)
-sleep_efficiency sleep efficiency (actigraphic registration)	
-wake_efficiency:  wake efficiency (actigraphic registration)	
+Frailty: Frailty Index;
+BMI: Body mass index;
+Grip: handgrip strenght;
+MMSE: Mini-Mental State Examination;
+SSS: Social Support Scale;
+MHC_SF: Mental Health Continuum Short Form;	
+ESS: Epworth Sleepiness Scale; 
+MNA: Mini Nutritional Assessment;
+RAVLT_I: Rey Auditory Verbal Learning Test Immediate recall;
+RAVLT_D: Rey Auditory Verbal Learning Test Delayed recall;
+SPPB: Short Physical Performance Battery; 	
+Htime: execution time (s) for the H cancellation test;
+Fluency: Phonemic verbal fluency;
+HADS_A: Hospital Anxiety and Depression Scale- Anxiety;
+HADS_D: Hospital Anxiety and Depression Scale- Depression;
+HADS_TOT: Hospital Anxiety and Depression Scale;
+DTCSwitch: Dual task Cost of Switching task performed on Dividat Senso;
+StroopDTC_Inh_1:Dual task Cost of Stroop Inhibition task performed on Dividat Senso- baseline RT colours;
+StroopDTC_Inh_2: Dual task Cost of Stroop Inhibition task performed on Dividat Senso- baseline RT words;
+StroopDTC_Flex_1: Dual task Cost of Stroop Flexibility task performed on Dividat Senso- baseline RT colours;
+StroopDTC_Flex_2: Dual task Cost of Stroop Flexibility task performed on Dividat Senso- baseline RT words;
+TugDTC: Dual task Cost of Timed Up and Go- normal pace;
+TugDTC_fast: Dual task Cost of Timed Up and Go- fast pace;
+SixMTW: 6 Minutes Walking Test;
+Hear: Whisper test;	
+Vacuity: Visual Acuity- Snellen chart;
+PEF: Peak of expiratory Flow;
+NPA: No-physical activity (actigraphic registration);
+LPA: Light physical activity (actigraphic registration);
+MPA: Medium physical activity (actigraphic registration);
+VPA: Vigorous physical activity (actigraphic registration);
+sleep_efficiency sleep efficiency (actigraphic registration);	
+wake_efficiency:  wake efficiency (actigraphic registration);	
 PPB	
 SWAY_C_PL	
 SWAY_O_PL	
