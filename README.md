@@ -1,4 +1,3 @@
-centage change in HFa# Network_SIPF25
 Parasympathetic withdrawal and reduced cognitive performance in the ageing brain: network graph representing correlations between clusters of variables.
 Each variable is represented as a node, and edges are drawn between nodes when the absolute correlation exceeded a predefined threshold (|r| > 0.4).
 Node colors reflected their cluster assignment from hierarchical clustering- Ward’s D2 method.
