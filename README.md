@@ -1,4 +1,4 @@
-# Network_SIPF25
+centage change in HFa# Network_SIPF25
 Parasympathetic withdrawal and reduced cognitive performance in the ageing brain: network graph representing correlations between clusters of variables.
 Each variable is represented as a node, and edges are drawn between nodes when the absolute correlation exceeded a predefined threshold (|r| > 0.4).
 Node colors reflected their cluster assignment from hierarchical clustering- Ward’s D2 method.
@@ -40,22 +40,18 @@ MPA: Medium physical activity (actigraphic registration);
 VPA: Vigorous physical activity (actigraphic registration);
 sleep_efficiency sleep efficiency (actigraphic registration);	
 wake_efficiency:  wake efficiency (actigraphic registration);	
-PPB	
-SWAY_C_PL	
-SWAY_O_PL	
-SWAY_C_maxDev	
-SWAY_C_Speed	
+PPB: percentage duration of pseudo-periodic behaviour (actigraphic registration);
 TP_rest: Total power in supine position
 LFa_rest: Low Frequency absolute power in supine position
 HFa_rest: High Frequency absolute power in supine position	
 LFnu_rest: Low Frequency normalized units in supine position	
 HFnu_rest: High Frequency normalized units in supine position	
 LFHF_rest: Ratio of Low and High Frequencies in supine position	
-DeltaHFa	
-DeltaLFa	
-DeltaLF	
-DeltaLFHF	
-DeltaHF	
+DeltaHFa: Percentage change in HFa from supine to standing;
+DeltaLFa:  Percentage change in LFa from supine to standing;
+DeltaLF: Relative change in LFnu from supine to standing;	
+DeltaLFHF: Relative change in LF/HFnu from supine to standing;	
+DeltaHF: Relative change in HFnu from supine to standing;		
 TP_stand: Total power in standing position
 LFa_stand:Low Frequency absolute power in standing position
 HFa_stand: High Frequency absolute power in standing position
