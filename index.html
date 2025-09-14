@@ -1,140 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>README - Parasympathetic Network</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background-color: #007acc;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        main {
-            padding: 2rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .readme {
-            background-color: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            overflow-y: auto;
-            max-height: 70vh;
-        }
-        h1, h2, h3 {
-            color: #007acc;
-        }
-        .network-button {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 0.75rem 1.5rem;
-            font-size: 1rem;
-            color: white;
-            background-color: #28a745;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .network-button:hover {
-            background-color: #218838;
-        }
-        ul {
-            padding-left: 1.5rem;
-        }
-        li {
-            margin-bottom: 0.5rem;
-        }
-        @media (max-width: 600px) {
-            main {
-                padding: 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network of Parasympathetic Withdrawal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem 1rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin: 0;
+      color: #007acc;
+    }
+
+    h2.subtitle {
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin-top: 0.5rem;
+      color: #555;
+    }
+
+    main {
+      padding: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .network-button {
+      display: inline-block;
+      margin: 1.5rem 0;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      color: white;
+      background-color: #28a745;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    .network-button:hover {
+      background-color: #218838;
+    }
+
+    .readme {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h3 {
+      color: #007acc;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      h2.subtitle {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Parasympathetic Withdrawal and Cognitive Performance</h1>
-    </header>
-    <main>
-        <div class="readme">
-            <p>Parasympathetic withdrawal and reduced cognitive performance in the ageing brain: network graph representing correlations between clusters of variables.</p>
-            <p>Each variable is represented as a node, and edges are drawn between nodes when the absolute correlation exceedes a predefined threshold (|r| &gt; 0.4). 
-                Node colors reflect their cluster assignment from hierarchical clustering- Ward’s D2 method. 
-                Edges width is proportional to the magnitude of the correlation. 
-                Green edges represent positive correlations, while blue negative correlations (Spearman's Rho). Network visualizations were generated using the visNetwork package in R.</p>
-            <h2>Variables:</h2>
-            <ul>
-                <li>Frailty: Frailty Index</li>
-                <li>BMI: Body mass index</li>
-                <li>Grip: handgrip strength</li>
-                <li>MMSE: Mini-Mental State Examination</li>
-                <li>SSS: Social Support Scale</li>
-                <li>MHC_SF: Mental Health Continuum Short Form</li>
-                <li>ESS: Epworth Sleepiness Scale</li>
-                <li>MNA: Mini Nutritional Assessment</li>
-                <li>RAVLT_I: Rey Auditory Verbal Learning Test Immediate recall</li>
-                <li>RAVLT_D: Rey Auditory Verbal Learning Test Delayed recall</li>
-                <li>SPPB: Short Physical Performance Battery</li>
-                <li>Htime: execution time (s) for the H cancellation test</li>
-                <li>Fluency: Phonemic verbal fluency</li>
-                <li>HADS_A: Hospital Anxiety and Depression Scale- Anxiety</li>
-                <li>HADS_D: Hospital Anxiety and Depression Scale- Depression</li>
-                <li>HADS_TOT: Hospital Anxiety and Depression Scale</li>
-                <li>DTCSwitch: Dual task Cost of Switching task performed on Dividat Senso</li>
-                <li>StroopDTC_Inh_1: Dual task Cost of Stroop Inhibition task performed on Dividat Senso- baseline RT colours</li>
-                <li>StroopDTC_Inh_2: Dual task Cost of Stroop Inhibition task performed on Dividat Senso- baseline RT words</li>
-                <li>StroopDTC_Flex_1: Dual task Cost of Stroop Flexibility task performed on Dividat Senso- baseline RT colours</li>
-                <li>StroopDTC_Flex_2: Dual task Cost of Stroop Flexibility task performed on Dividat Senso- baseline RT words</li>
-                <li>TugDTC: Dual task Cost of Timed Up and Go- normal pace</li>
-                <li>TugDTC_fast: Dual task Cost of Timed Up and Go- fast pace</li>
-                <li>SixMTW: 6 Minutes Walking Test</li>
-                <li>SWAY_C_PL: The total distance the centre of pressure moved during the test, closed eyes</li>
-                <li>SWAY_O_PL: The total distance the centre of pressure moved during the test, open eyes</li>
-                <li>SWAY_C_MaxDev: The maximum deviation of the centre of pressure from the initial position</li>
-                <li>SWAY_C_Speed: The average speed (mm/s) at which the centre of pressure moved during the test</li>
-                <li>Hear: Whisper test</li>
-                <li>Vacuity: Visual Acuity- Snellen chart</li>
-                <li>PEF: Peak of expiratory Flow</li>
-                <li>NPA: No-physical activity (actigraphic registration)</li>
-                <li>LPA: Light physical activity (actigraphic registration)</li>
-                <li>MPA: Medium physical activity (actigraphic registration)</li>
-                <li>VPA: Vigorous physical activity (actigraphic registration)</li>
-                <li>sleep_efficiency: sleep efficiency (actigraphic registration)</li>
-                <li>wake_efficiency: wake efficiency (actigraphic registration)</li>
-                <li>PPB: percentage duration of pseudo-periodic behaviour (actigraphic registration)</li>
-                <li>TP_rest: Total power in supine position</li>
-                <li>LFa_rest: Low Frequency absolute power in supine position</li>
-                <li>HFa_rest: High Frequency absolute power in supine position</li>
-                <li>LFnu_rest: Low Frequency normalized units in supine position</li>
-                <li>HFnu_rest: High Frequency normalized units in supine position</li>
-                <li>LFHF_rest: Ratio of Low and High Frequencies in supine position</li>
-                <li>DeltaHFa: Percentage change in HFa from supine to standing</li>
-                <li>DeltaLFa: Percentage change in LFa from supine to standing</li>
-                <li>DeltaLF: Relative change in LFnu from supine to standing</li>
-                <li>DeltaLFHF: Relative change in LF/HFnu from supine to standing</li>
-                <li>DeltaHF: Relative change in HFnu from supine to standing</li>
-                <li>TP_stand: Total power in standing position</li>
-                <li>LFa_stand: Low Frequency absolute power in standing position</li>
-                <li>HFa_stand: High Frequency absolute power in standing position</li>
-                <li>LFnu_stand: Low Frequency normalized units in standing position</li>
-                <li>HFnu_stand: High Frequency normalized units in standing position</li>
-            </ul>
-        </div>
-        <a class="network-button" href="https://lucia-pp.github.io/Network_SIPF25/network_HRVagetc.html" target="_blank">View Network</a>
-    </main>
+  <header>
+    <h1>Network of Parasympathetic Withdrawal</h1>
+    <h2 class="subtitle">
+      Parasympathetic withdrawal and reduced cognitive performance in the ageing brain
+    </h2>
+    <a class="network-button" href="network_HRVagetc.html" target="_blank">View Network</a>
+  </header>
+
+  <main>
+    <div class="readme">
+      <h3>Variables:</h3>
+      <ul>
+        <li>Frailty: Frailty Index</li>
+        <li>BMI: Body mass index</li>
+        <li>Grip: handgrip strength</li>
+        <li>MMSE: Mini-Mental State Examination</li>
+        <li>SSS: Social Support Scale</li>
+        <li>MHC_SF: Mental Health Continuum Short Form</li>
+        <li>ESS: Epworth Sleepiness Scale</li>
+        <li>MNA: Mini Nutritional Assessment</li>
+        <li>RAVLT_I: Rey Auditory Verbal Learning Test Immediate recall</li>
+        <li>RAVLT_D: Rey Auditory Verbal Learning Test Delayed recall</li>
+        <li>SPPB: Short Physical Performance Battery</li>
+        <li>Htime: execution time (s) for the H cancellation test</li>
+        <li>Fluency: Phonemic verbal fluency</li>
+        <li>HADS_A: Hospital Anxiety and Depression Scale- Anxiety</li>
+        <li>HADS_D: Hospital Anxiety and Depression Scale- Depression</li>
+        <li>HADS_TOT: Hospital Anxiety and Depression Scale</li>
+        <li>DTCSwitch: Dual task Cost of Switching task performed on Dividat Senso</li>
+        <li>StroopDTC_Inh_1: Dual task Cost of Stroop Inhibition task performed on Dividat Senso- baseline RT colours</li>
+        <li>StroopDTC_Inh_2: Dual task Cost of Stroop Inhibition task performed on Dividat Senso- baseline RT words</li>
+        <li>StroopDTC_Flex_1: Dual task Cost of Stroop Flexibility task performed on Dividat Senso- baseline RT colours</li>
+        <li>StroopDTC_Flex_2: Dual task Cost of Stroop Flexibility task performed on Dividat Senso- baseline RT words</li>
+        <li>TugDTC: Dual task Cost of Timed Up and Go- normal pace</li>
+        <li>TugDTC_fast: Dual task Cost of Timed Up and Go- fast pace</li>
+        <li>SixMTW: 6 Minutes Walking Test</li>
+        <li>SWAY_C_PL: The total distance the centre of pressure moved during the test, closed eyes</li>
+        <li>SWAY_O_PL: The total distance the centre of pressure moved during the test, open eyes</li>
+        <li>SWAY_C_MaxDev: The maximum deviation of the centre of pressure from the initial position</li>
+        <li>SWAY_C_Speed: The average speed (mm/s) at which the centre of pressure moved during the test</li>
+        <li>Hear: Whisper test</li>
+        <li>Vacuity: Visual Acuity- Snellen chart</li>
+        <li>PEF: Peak of expiratory Flow</li>
+        <li>NPA: No-physical activity (actigraphic registration)</li>
+        <li>LPA: Light physical activity (actigraphic registration)</li>
+        <li>MPA: Medium physical activity (actigraphic registration)</li>
+        <li>VPA: Vigorous physical activity (actigraphic registration)</li>
+        <li>sleep_efficiency: sleep efficiency (actigraphic registration)</li>
+        <li>wake_efficiency: wake efficiency (actigraphic registration)</li>
+        <li>PPB: percentage duration of pseudo-periodic behaviour (actigraphic registration)</li>
+        <li>TP_rest: Total power in supine position</li>
+        <li>LFa_rest: Low Frequency absolute power in supine position</li>
+        <li>HFa_rest: High Frequency absolute power in supine position</li>
+        <li>LFnu_rest: Low Frequency normalized units in supine position</li>
+        <li>HFnu_rest: High Frequency normalized units in supine position</li>
+        <li>LFHF_rest: Ratio of Low and High Frequencies in supine position</li>
+        <li>DeltaHFa: Percentage change in HFa from supine to standing</li>
+        <li>DeltaLFa: Percentage change in LFa from supine to standing</li>
+        <li>DeltaLF: Relative change in LFnu from supine to standing</li>
+        <li>DeltaLFHF: Relative change in LF/HFnu from supine to standing</li>
+        <li>DeltaHF: Relative change in HFnu from supine to standing</li>
+        <li>TP_stand: Total power in standing position</li>
+        <li>LFa_stand: Low Frequency absolute power in standing position</li>
+        <li>HFa_stand: High Frequency absolute power in standing position</li>
+        <li>LFnu_stand: Low Frequency normalized units in standing position</li>
+        <li>HFnu_stand: High Frequency normalized units in standing position</li>
+      </ul>
+    </div>
+  </main>
 </body>
 </html>
+
+
 
 
 
